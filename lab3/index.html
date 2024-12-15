@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Processing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Processing App</h1>
+
+    <!-- Image upload section -->
+    <input type="file" id="upload" accept="image/*">
+    <button onclick="buildHistogram()">Build Histogram</button>
+    <button onclick="equalizeHistogram()">Equalize Histogram</button>
+    <button onclick="adjustContrast()">Linear Contrast</button>
+    <button onclick="sharpenImage()">Sharpen Image</button>
+
+    <!-- Canvas to display the image -->
+    <canvas id="canvas"></canvas>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
