@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Processing App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasterization Algorithms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Image Processing App</h1>
+    <div class="container">
+        <h1>Rasterization Algorithms</h1>
+        
+        <div class="controls">
+            <label for="algorithm">Choose an algorithm:</label>
+            <select id="algorithm">
+                <option value="basic">Basic Algorithm</option>
+                <option value="dda">DDA Algorithm</option>
+                <option value="bresenham">Bresenham's Line Algorithm</option>
+                <option value="circle">Bresenham's Circle Algorithm</option>
+            </select>
+            <button onclick="draw()">Draw</button>
+        </div>
 
-    <!-- Image upload section -->
-    <input type="file" id="upload" accept="image/*">
-    <button onclick="buildHistogram()">Build Histogram</button>
-    <button onclick="equalizeHistogram()">Equalize Histogram</button>
-    <button onclick="adjustContrast()">Linear Contrast</button>
-    <button onclick="sharpenImage()">Sharpen Image</button>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <p id="info">Choose an algorithm to draw a line or a circle.</p>
+    </div>
 
-    <!-- Canvas to display the image -->
-    <canvas id="canvas"></canvas>
-
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
