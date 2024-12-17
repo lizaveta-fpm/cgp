@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.upload-area {
+    margin-bottom: 40px;
+}
+
+.upload-btn {
+    background-color: #f57c00;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #e65100;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.table-container {
+    margin-top: 40px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #f57c00;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td:last-child {
+    text-align: center;
+}
